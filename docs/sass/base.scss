@@ -1,0 +1,41 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    
+}
+a{
+    width: 90%;
+}
+a:link 
+{ 
+ text-decoration:none; 
+} 
+header{
+    text-align: center;
+    h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 8vw;
+        margin: 0;
+    }
+}
+section{
+    width: 100%;
+    background-color: $font-color;
+    text-align: center;
+}
+article{
+box-sizing: content-box;
+width: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5% 0 5% 5%;
+    h3{
+        font-family: 'Shrikhand', cursive;
+        font-size: 2vw;
+    }
+}
+

@@ -1,0 +1,153 @@
+/*--------COLOR-------*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  width: 90%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 8vw;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+article {
+  box-sizing: content-box;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5% 0 5% 5%;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2vw;
+}
+
+button {
+  background: radial-gradient(#FF79DA, #9356DC);
+  border-radius: 60px;
+  color: white;
+  font-size: 40px;
+  width: 560px;
+  height: 120px;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
+}
+
+.city_header {
+  height: 750px;
+}
+.city_header > h2 {
+  font-size: 60px;
+}
+.city_header > p {
+  font-size: 50px;
+}
+.city_header > div {
+  font-weight: 500;
+  font-size: 50px;
+  height: 150px;
+  background-color: #e5e5e5;
+  border-top: 2px solid #bfbfbf;
+}
+.city_header span {
+  line-height: 150px;
+}
+
+.rules_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  height: 1000px;
+}
+.rules_container h2 {
+  font-size: 60px;
+  width: 100%;
+}
+.rules_container .rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  height: 200px;
+  background-color: #F2F2F2;
+  border-radius: 60px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.rules_container .number {
+  position: absolute;
+  top: 30%;
+  left: -3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+}
+
+.restaurants_container {
+  height: 3000px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.restaurants_container h2 {
+  font-size: 80px;
+}
+.restaurants_container article {
+  position: relative;
+  height: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.restaurants_container img {
+  max-width: 100%;
+}
+.restaurants_container .description {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  border-radius: 0 0 30px 30px;
+  background-color: white;
+  font-size: 30px;
+  text-align: start;
+  color: black;
+  line-height: 15px;
+  padding-left: 20px;
+}
+.restaurants_container h3 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.restaurants_container h4 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */
