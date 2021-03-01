@@ -39,10 +39,11 @@ footer {
   background-color: black;
   color: white;
   padding: 5% 0 5% 5%;
+  font-size: 4vw;
 }
 footer h3 {
   font-family: "Shrikhand", cursive;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 button {
@@ -108,6 +109,9 @@ button {
   color: white;
   background-color: #9356DC;
 }
+.rules_container i {
+  margin-right: 40px;
+}
 
 .restaurants_container {
   height: 3000px;
@@ -148,6 +152,23 @@ button {
 .restaurants_container h4 {
   font-size: 40px;
   font-weight: 300;
+}
+
+.new {
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  font-size: 40px;
+  background-color: #99E2D0;
+  top: 30px;
+  right: 30px;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
+  font-size: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

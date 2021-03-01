@@ -52,6 +52,9 @@
         background-color: $color-primary;
 
     }
+    i{
+        margin-right: 40px;
+    }
 }
 .restaurants_container {
     height: 3000px;
@@ -94,4 +97,21 @@
         font-size: 40px;
         font-weight: 300;
     }
+}
+.new{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    font-size: 40px;
+    background-color: $color-tertiary;
+    top: 30px;
+    right: 30px;
+
+}
+.fa-heart{
+position: absolute;
+right: 50px;
+bottom: 100px;
+font-size: 60px;
+
 }
