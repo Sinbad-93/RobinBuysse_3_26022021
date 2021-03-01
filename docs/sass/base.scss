@@ -3,10 +3,11 @@
 }
 body{
     margin: 0;
-    
+    overflow: hidden;/*animation*/
 }
 a{
     width: 90%;
+    cursor: pointer;
 }
 a:link 
 { 
@@ -37,6 +38,10 @@ footer{
     h3{
         font-family: 'Shrikhand', cursive;
         font-size: 4vw;
+    }
+    a:link 
+    { 
+     color: white; 
     }
 }
 

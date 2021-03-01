@@ -1,14 +1,18 @@
 /*--------COLOR-------*/
+/*-----SHADOW------*/
 * {
   font-family: "Roboto", sans-serif;
 }
 
 body {
   margin: 0;
+  overflow: hidden;
+  /*animation*/
 }
 
 a {
   width: 90%;
+  cursor: pointer;
 }
 
 a:link {
@@ -45,6 +49,9 @@ footer h3 {
   font-family: "Shrikhand", cursive;
   font-size: 4vw;
 }
+footer a:link {
+  color: white;
+}
 
 button {
   background: radial-gradient(#FF79DA, #9356DC);
@@ -53,7 +60,12 @@ button {
   font-size: 40px;
   width: 560px;
   height: 120px;
+  cursor: pointer;
   box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
+}
+button:hover {
+  opacity: 0.7;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25), 0 30px 18px rgba(0, 0, 0, 0.22);
 }
 
 .city_header {
@@ -98,6 +110,7 @@ button {
   border-radius: 60px;
   font-size: 40px;
   font-weight: 700;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
 }
 .rules_container .number {
   position: absolute;
@@ -129,6 +142,7 @@ button {
   border-radius: 30px;
   overflow: hidden;
   object-fit: cover;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
 }
 .restaurants_container img {
   max-width: 100%;
@@ -169,6 +183,149 @@ button {
   right: 50px;
   bottom: 100px;
   font-size: 60px;
+}
+
+.full-heart {
+  color: #9356DC;
+  opacity: 0;
+}
+.full-heart:hover {
+  opacity: 1;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 20px;
+  font-size: 50px;
+  line-height: 110px;
+  color: black;
+}
+
+.photo {
+  position: absolute;
+}
+.photo img {
+  max-width: 100%;
+}
+
+.drop_down_menu {
+  width: 95%;
+  position: relative;
+  padding: 24.5px;
+  border-radius: 50px 50px 0 0;
+  margin-top: 600px;
+}
+.drop_down_menu h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 80px;
+  font-family: "Shrikhand", cursive;
+}
+.drop_down_menu .fa-heart {
+  right: 50px;
+  top: 90px;
+  height: 50%;
+  font-size: 60px;
+  line-height: 120px;
+}
+.drop_down_menu button {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.container {
+  height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.container h3 {
+  text-align: start;
+  font-size: 60px;
+  margin-bottom: -10px;
+}
+.container .underline {
+  width: 100px;
+  height: 5px;
+  background-color: #99E2D0;
+}
+.container .menu__picker {
+  width: 95%;
+  background-color: white;
+  height: 150px;
+  border-radius: 35px;
+  padding: 40px 3% 20px 2%;
+  text-align: start;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
+}
+.container .text__price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container .price {
+  font-weight: bolder;
+}
+.container h4 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.high__size {
+  height: 1200px;
+}
+
+.load-spinner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.load-spinner img {
+  position: relative;
+  align-self: center;
+  height: 300px;
+}
+.load-spinner .circle {
+  position: absolute;
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  z-index: 3;
+}
+.load-spinner .circle__2 {
+  position: absolute;
+  align-self: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  z-index: 3;
+}
+
+/*.load-spinner::after {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border: 10px solid #ff0505;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;}*/
+@keyframes {
+  0% {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
