@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*--------COLOR-------*/
 /*-----SHADOW------*/
 * {
@@ -6,8 +7,7 @@
 
 body {
   margin: 0;
-  overflow: hidden;
-  /*animation*/
+  animation: body_loading 3.5s;
 }
 
 a {
@@ -281,35 +281,92 @@ button:hover {
 .load-spinner {
   position: absolute;
   display: flex;
+  opacity: 0;
   justify-content: center;
-  z-index: 2;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-color: white;
   overflow: hidden;
+  animation: loadSpinner__font 2.8s;
 }
-.load-spinner img {
+.load-spinner p {
+  position: absolute;
+  font-size: 50px;
+  top: 25%;
+}
+
+.load-spinner__rect {
   position: relative;
-  align-self: center;
+  display: flex;
+  justify-content: center;
   height: 300px;
+  align-self: center;
+  background-color: white;
 }
-.load-spinner .circle {
+.load-spinner__rect img {
+  position: relative;
+  height: 300px;
+  background-color: transparent;
+  z-index: 4;
+}
+.load-spinner__rect .plate_circle-in {
   position: absolute;
   align-self: center;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #FF79DA;
   z-index: 3;
+  opacity: 0;
+  animation: loadSpinner 3s 1600ms;
 }
-.load-spinner .circle__2 {
+.load-spinner__rect .plate_circle-out {
   position: absolute;
   align-self: center;
-  width: 100px;
-  height: 100px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #FF79DA;
+  z-index: 2;
+  opacity: 0;
+  animation: loadSpinner 3s 2200ms;
+}
+.load-spinner__rect .fork_object {
+  position: absolute;
+  align-self: center;
+  width: 30px;
+  height: 150px;
+  left: 30px;
+  top: 130px;
   z-index: 3;
+  background-color: #99E2D0;
+  opacity: 0;
+  animation: loadSpinner 3s 400ms;
+}
+.load-spinner__rect .fork_object-top {
+  position: absolute;
+  align-self: center;
+  width: 60px;
+  height: 20px;
+  left: 10px;
+  top: 100px;
+  z-index: 3;
+  background-color: #99E2D0;
+  opacity: 0;
+  animation: loadSpinner 3s 400ms;
+}
+.load-spinner__rect .knife_object {
+  position: absolute;
+  align-self: center;
+  width: 30px;
+  height: 230px;
+  right: 20px;
+  top: 40px;
+  z-index: 3;
+  background-color: #99E2D0;
+  opacity: 0;
+  animation: loadSpinner 3s 1000ms;
 }
 
 /*.load-spinner::after {
@@ -322,9 +379,35 @@ button:hover {
     border-radius: 50%;
     width: 100px;
     height: 100px;}*/
-@keyframes {
+@keyframes loadSpinner {
   0% {
-    display: none;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*fond blanc pendant le chargement de la page*/
+@keyframes loadSpinner__font {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+/*empecher de bouger la fenêtre pendant le chargement*/
+@keyframes body_loading {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
   }
 }
 
