@@ -15,6 +15,8 @@ a:link
 } 
 header{
     text-align: center;
+    line-height: 150px;
+    height: 150px;
     h1{
         font-family: 'Shrikhand', cursive;
         font-size: 8vw;
@@ -31,17 +33,20 @@ box-sizing: content-box;
 width: 100%;
 }
 footer{
-    background-color: black;
+    background-color: darken($font-color,70%);
     color: white;
-    padding: 5% 0 5% 5%;
+    padding: 2% 0 5% 5%;
     font-size: 4vw;
     h3{
         font-family: 'Shrikhand', cursive;
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     a:link 
     { 
      color: white; 
+    }
+    i{
+        padding-right: 25px;
     }
 }
 
