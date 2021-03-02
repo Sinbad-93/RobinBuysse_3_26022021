@@ -54,23 +54,50 @@
         background-color: $color-tertiary;
     }
     .menu__picker{
+        position: relative;
         width: 95%;
         background-color: white;
         height: 150px;
         border-radius: 35px;
         padding: 40px 3% 20px 2%;
         text-align: start;
+        overflow: hidden;
+        cursor: pointer;
         @include box__shadow;
+        &:hover .checked{
+            animation: checked 2s;
+        }
+        &:hover .text__price{
+            animation: reduce 2s;
+        }
+        &:hover .price{
+            animation: move_price 2s;
+        }
+        &:hover .fa-check-circle{
+            animation: turn-around 2s;
+        }
     }
     .text__price{
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        width: 80%;
+        margin-right: 0;
         font-size: 42px;
-        margin-top: 0; margin-bottom: 0;    
+        margin-top: 0; margin-bottom: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .arrangement{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .price{
+            position: absolute;
+            right: 20px;
+            font-weight: bolder;
+        }
     }
-    .price{
-        font-weight: bolder;
-    }
+
     h4{
         font-size: 50px;
         margin-top: 0; margin-bottom: 0; 

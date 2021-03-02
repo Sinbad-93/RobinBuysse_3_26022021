@@ -88,17 +88,6 @@
         animation: loadSpinner 3s 1000ms ;
     }
 }
-
-/*.load-spinner::after {
-    content: "";
-    z-index: 2;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    border: 10px solid #ff0505;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;}*/
  
 @keyframes loadSpinner{
     0%{ opacity:0;}

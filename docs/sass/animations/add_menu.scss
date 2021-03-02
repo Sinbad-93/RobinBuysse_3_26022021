@@ -1,0 +1,33 @@
+.checked {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: $color-tertiary;
+    /*@include box__shadow-checked;*/
+    .fa-check-circle{
+        padding: 65px;
+        font-size: 70px;
+        color: white;
+        transform-origin: center;
+    }
+}
+@keyframes checked {
+    from{width: 0;}
+    to{width: 20%}
+}
+@keyframes turn-around {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes move_price {
+    from{right: 20px;}
+    to{right: 210px;}
+}
+@keyframes reduce {
+    from{width: 100%;}
+    to{width: 67%;}
+}
+

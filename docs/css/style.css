@@ -258,22 +258,48 @@ button:hover {
   background-color: #99E2D0;
 }
 .container .menu__picker {
+  position: relative;
   width: 95%;
   background-color: white;
   height: 150px;
   border-radius: 35px;
   padding: 40px 3% 20px 2%;
   text-align: start;
+  overflow: hidden;
+  cursor: pointer;
   box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25), 0 10px 18px rgba(0, 0, 0, 0.22);
 }
+.container .menu__picker:hover .checked {
+  animation: checked 2s;
+}
+.container .menu__picker:hover .text__price {
+  animation: reduce 2s;
+}
+.container .menu__picker:hover .price {
+  animation: move_price 2s;
+}
+.container .menu__picker:hover .fa-check-circle {
+  animation: turn-around 2s;
+}
 .container .text__price {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  width: 80%;
+  margin-right: 0;
   font-size: 42px;
   margin-top: 0;
   margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.container .price {
+.container .text__price .arrangement {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .text__price .price {
+  position: absolute;
+  right: 20px;
   font-weight: bolder;
 }
 .container h4 {
@@ -377,16 +403,6 @@ button:hover {
   animation: loadSpinner 3s 1000ms;
 }
 
-/*.load-spinner::after {
-    content: "";
-    z-index: 2;
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    border: 10px solid #ff0505;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;}*/
 @keyframes loadSpinner {
   0% {
     opacity: 0;
@@ -416,6 +432,55 @@ button:hover {
   }
   99% {
     overflow: hidden;
+  }
+}
+.checked {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0 20px 20px 0;
+  background-color: #99E2D0;
+  /*@include box__shadow-checked;*/
+}
+.checked .fa-check-circle {
+  padding: 65px;
+  font-size: 70px;
+  color: white;
+  transform-origin: center;
+}
+
+@keyframes checked {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes turn-around {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move_price {
+  from {
+    right: 20px;
+  }
+  to {
+    right: 210px;
+  }
+}
+@keyframes reduce {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 67%;
   }
 }
 
