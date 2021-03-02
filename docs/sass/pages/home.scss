@@ -14,7 +14,6 @@
         font-size: 50px;
         height: 130px;
         background-color: darken($font-color,5%);
-        border-top : 2px solid darken($font-color,20%);
     }
     span {
         line-height: 150px;
@@ -40,6 +39,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: flex-start;
         position: relative;
         width: 90%;
         height: 180px;
@@ -49,8 +49,14 @@
         font-weight: 700;
         @include box__shadow; 
     }
+    span{
+        width: 90%;
+        font-size: 42px ;
+        text-align: left;
+    }
     i{
         margin-right: 50px;
+        margin-left: 100px;
     }
     .dusky{
         background-color: lighten($color-primary, 35%);
