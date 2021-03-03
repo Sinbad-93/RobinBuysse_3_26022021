@@ -4,15 +4,15 @@
     cursor: pointer;
     right: 50px;
     bottom: 100px;
-    font-size: 40px;
+    font-size: 38px;
     transform: scale(1.5,1.8);
     &:hover .full-heart {
         animation: fill_heart 1s;}
     }
 .full-heart {
     font-size: 27px;
-    right: 7px;
-    bottom: 8px;
+    right: 5px;
+    bottom: 6px;
     color: $color-primary;
     opacity: 0;
     transform: scale(1.5,1.6);

@@ -531,7 +531,7 @@ button:hover {
   cursor: pointer;
   right: 50px;
   bottom: 100px;
-  font-size: 40px;
+  font-size: 38px;
   transform: scale(1.5, 1.8);
 }
 .fa-heart:hover .full-heart {
@@ -540,8 +540,8 @@ button:hover {
 
 .full-heart {
   font-size: 27px;
-  right: 7px;
-  bottom: 8px;
+  right: 5px;
+  bottom: 6px;
   color: #9356DC;
   opacity: 0;
   transform: scale(1.5, 1.6);
@@ -575,6 +575,61 @@ button:hover {
   }
   100% {
     font-size: 41px;
+    opacity: 1;
+  }
+}
+/* ---BOUCLE SASS--- .anim-menu-1à10 */
+.anim_menu-1 {
+  animation: appear 2.5s;
+}
+
+.anim_menu-2 {
+  animation: appear 3s;
+}
+
+.anim_menu-3 {
+  animation: appear 3.5s;
+}
+
+.anim_menu-4 {
+  animation: appear 4s;
+}
+
+.anim_menu-5 {
+  animation: appear 4.5s;
+}
+
+.anim_menu-6 {
+  animation: appear 5s;
+}
+
+.anim_menu-7 {
+  animation: appear 5.5s;
+}
+
+.anim_menu-8 {
+  animation: appear 6s;
+}
+
+.anim_menu-9 {
+  animation: appear 6.5s;
+}
+
+.anim_menu-10 {
+  animation: appear 7s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
     opacity: 1;
   }
 }
