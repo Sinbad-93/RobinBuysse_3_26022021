@@ -7,16 +7,21 @@
 }
 
 .photo {
-    position: absolute;
+    position: relative;
     img{
     max-width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: -250px;
+    right: 0px;
 }
 }
 .drop_down_menu{
     width: 95%;
     position: relative;
     padding: 24.5px;
-    border-radius: 50px 50px 0 0;
+    /*border-radius: 50px 50px 0 0;*/
+    border-radius: 80px/80px 80px 0 0;
     margin-top: 600px;
     h2{
         display: flex;
@@ -28,16 +33,17 @@
         position: absolute;
         z-index: 6;
         right: 50px;
-        top: 90px;
+        top: 100px;
         bottom: auto;
         height: auto;
-        font-size: 60px;
+        font-size: 40px;
+        margin-right: 30px;
         line-height: 120px;
         &:hover .full-heart {
             animation: fill_heart-2 1s;}
         .full-heart{
-            right: 9px;
-            bottom: 39px;
+            right: 7px;
+            bottom: 47px;
             font-size: 60px;
         }
         }
@@ -48,26 +54,27 @@
 }
 
 .container {
-    height: 1000px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     
     h3{
         text-align: start;
-        font-size: 60px;
+        font-size: 50px;
+        font-weight: 300;
         margin-bottom: -10px;
     }
     .underline{
         width: 100px;
         height: 5px;
-        background-color: $color-tertiary;
+        background-color: darken($color-tertiary,20%);
     }
     .menu__picker{
         position: relative;
         width: 95%;
         background-color: white;
-        height: 150px;
+        height: 130px;
         border-radius: 35px;
         padding: 40px 3% 20px 2%;
         text-align: start;
@@ -109,5 +116,5 @@
     }
 }
 .high__size{
-    height: 1200px;
+    height: 1000px;
 }

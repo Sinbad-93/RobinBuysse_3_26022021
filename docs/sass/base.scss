@@ -18,15 +18,19 @@ a:link
 
 header{
     text-align: center;
+    background-color: white;
     line-height: 150px;
     height: 150px;
     margin-bottom: 10px;
-    box-shadow: 0px 9px 14px -1px darken($font-color,20%);
+    
     h1{
         font-family: 'Shrikhand', cursive;
         font-size: 8vw;
         margin: 0;
     }
+}
+.home_header{
+    box-shadow: 0px 9px 14px -1px darken($font-color,20%);
 }
 section{
     width: 100%;
