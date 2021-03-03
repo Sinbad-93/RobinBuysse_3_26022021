@@ -62,3 +62,36 @@ footer{
     }
 }
 
+/*-----MEDIA QUERIES ----------------*/
+@media only screen and (min-width: 768px) {
+
+header{
+    line-height: 100px;
+    height: 100px; 
+    h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 4vw;
+    }
+}
+section{
+    margin: auto;
+    width: 90%;
+}
+article{
+box-sizing: content-box;
+width: 100%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    padding: 0;
+    padding-right: 30px;
+    padding-left: 50px;
+    font-size: 25px;
+    h3{
+        font-family: 'Shrikhand', cursive;
+        font-size: 40px;
+    }
+}
+}

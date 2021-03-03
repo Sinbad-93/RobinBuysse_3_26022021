@@ -14,3 +14,14 @@ button {
         @include button__shadow__hover;
     }
 }
+
+/*------MEDIA QUERIES--------*/
+@media only screen and (min-width: 768px) {
+
+button {
+    
+    font-size: 25px;
+    width: 300px;
+    height: 80px;
+}
+}
