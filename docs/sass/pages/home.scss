@@ -41,7 +41,7 @@
         justify-content: center;
         align-content: flex-start;
         position: relative;
-        width: 90%;
+        width: 85%;
         height: 180px;
         background-color: $font-color;
         border-radius: 60px;
@@ -105,6 +105,7 @@
     }
     article {
         position: relative;
+        width: 90%;
         height: 600px;
         border-radius: 30px;
         overflow: hidden;
@@ -152,17 +153,4 @@
     right: 30px;
 
 }
-.fa-heart{
-position: absolute;
-right: 50px;
-bottom: 100px;
-font-size: 40px;
-transform: scale(1.5,1.8);
-}
-.full-heart {
-    color: $color-primary;
-    opacity: 0;
-        &:hover{
-        opacity: 1;
-    }
-}
+

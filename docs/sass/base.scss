@@ -4,15 +4,18 @@
 body{
     margin: 0;
     animation: body_loading 3.5s;
+    a{
+        color: black;
+    }
 }
 a{
-    width: 90%;
     cursor: pointer;
 }
 a:link 
 { 
  text-decoration:none; 
 } 
+
 header{
     text-align: center;
     line-height: 150px;
@@ -42,6 +45,9 @@ footer{
     h3{
         font-family: 'Shrikhand', cursive;
         font-size: 4.5vw;
+    }
+    a{
+        color: white;
     }
     a:link 
     { 

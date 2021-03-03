@@ -24,12 +24,22 @@
         font-size: 80px;
         font-family: 'Shrikhand', cursive;
     }
-    .fa-heart{
+    .heart-2{
+        position: absolute;
+        z-index: 6;
         right: 50px;
         top: 90px;
-        height: 50%;
+        bottom: auto;
+        height: auto;
         font-size: 60px;
         line-height: 120px;
+        &:hover .full-heart {
+            animation: fill_heart-2 1s;}
+        .full-heart{
+            right: 9px;
+            bottom: 39px;
+            font-size: 60px;
+        }
         }
     button{
         margin-top: 70px;
