@@ -1,0 +1,210 @@
+
+/* -----------------DESKTOP ---------------------------*/
+@media screen and (min-width: 1401px)  { 
+    .city_header{
+    height: 150px;
+    background-color: transparent;
+    > h2 {
+        font-size: 35px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    > p {
+        display: inline;
+        font-size: 25px;
+    }
+    > div {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 50%;
+        font-size: 25px;
+        height: 30%;
+    }
+    button{
+        margin-left: 80px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    span {
+        line-height: 28px;
+        margin-left: 20px;
+    }
+}
+
+.rules_container{
+    height: 200px ;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    justify-content: center;
+    h2 {
+        font-size: 30px;
+        margin-left: 40px;
+        margin-top: 120px;
+    }
+    .rules {
+        width: 25%;
+        height: 80px;
+        font-size: 25px;
+        padding-right: 10px;
+    }
+    span{
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        width: 40%;
+        font-size: 1.2vw ;
+        text-align: left;
+    }
+    i{
+        position: absolute;
+        margin-right: 0;
+        margin-left: 80px;
+        left: 0;
+        top: 20px;
+        align-self: flex-start;
+    }
+    .fa-store{
+        font-size: 23px;
+;
+    }
+    .fa-mobile-alt{
+        font-size: 28px;
+
+    }
+    .fa-list{
+        font-size: 25px;
+
+    }
+    .number {
+        top: 10%;
+    }
+}
+.restaurants_container {
+    height: 1000px;
+    justify-content: center;
+    padding-bottom: 150px;
+    
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    article {
+        margin: 40px;
+        width: 30%;
+        height: 350px;
+    }
+    img {
+        top: -100x;
+    }
+    h3{
+        font-size: 27px;
+    }
+    h4{
+        font-size: 25px;
+    }
+}
+.new{
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    line-height:30px;
+    font-size: 15px;
+}
+/*resize one particular picture*/
+.restaurants_container {.note_photo{
+    top: -230px;
+}}
+
+/*----RESTAURANT------------*/
+.photo {
+    position: relative;
+    img{
+    top: -600px;
+}
+}
+    
+.fa-arrow-left{
+    font-size: 40px;
+}
+.drop_down_menu{
+    margin-top: 350px;
+    h2{
+        font-size: 45px;
+        font-family: 'Shrikhand', cursive;
+    }
+    .heart-2{ 
+        top: 25px;
+        font-size: 27px;
+        margin-right: 100px;
+        &:hover .full-heart {
+            animation: fill_heart-2_tablet 1s;}
+            .full-heart{
+                right: 6px;
+                bottom: 52px;
+                font-size: 30px;
+            }
+        }
+    button{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+    h3{
+        font-size: 30px;
+    }
+    .menu__picker{
+        height: 70px;
+        padding: 20px 3% 20px 2%;
+        @include box__shadow;
+        &:hover .checked{
+            animation: checked 2s;
+        }
+        &:hover .text__price{
+            animation: reduce 2s;
+        }
+        &:hover .price{
+            animation: move_price 2s;
+        }
+        &:hover .fa-check-circle{
+            animation: turn-around 2s;
+        }
+    }
+    .text__price{
+        font-size: 25px;
+        margin-top: 0; margin-bottom: 0;
+    }
+
+    h4{
+        font-size: 30px;
+        margin-top: 0; margin-bottom: 0; 
+    }
+}
+.high__size{
+    height: 700px;
+}
+/*ANIMATION CHECKED */
+.checked {
+    position: absolute;
+    width: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: $color-tertiary;
+    /*@include box__shadow-checked;*/
+    .fa-check-circle{
+        padding: 40px;
+        font-size: 40px;
+        color: white;
+        transform-origin: center;
+    }
+}
+}
