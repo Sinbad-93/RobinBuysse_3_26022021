@@ -31,3 +31,57 @@
     to{width: 67%;}
 }
 
+
+@media only screen and (min-width: 768px) and (max-width : 1100px)  {
+/*ANIMATION CHECKED */
+.checked {
+    position: absolute;
+    width: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: $color-tertiary;
+    /*@include box__shadow-checked;*/
+    .fa-check-circle{
+        padding: 40px;
+        font-size: 40px;
+        color: white;
+        transform-origin: center;
+    }
+}}
+
+@media only screen and (min-width: 1101px) and (max-width : 1400px)  {
+    /*ANIMATION CHECKED */
+    .checked {
+        position: absolute;
+        width: 0;
+        right: 0;
+        top: 0;
+        border-radius: 0 20px 20px 0;
+        background-color: $color-tertiary;
+        /*@include box__shadow-checked;*/
+        .fa-check-circle{
+            padding: 40px;
+            font-size: 40px;
+            color: white;
+            transform-origin: center;
+        }
+    }}
+
+@media only screen and (min-width: 1401px) {
+    /*ANIMATION CHECKED */
+    .checked {
+        position: absolute;
+        width: 0;
+        right: 0;
+        top: 0;
+        border-radius: 0 20px 20px 0;
+        background-color: $color-tertiary;
+        /*@include box__shadow-checked;*/
+        .fa-check-circle{
+            padding: 40px;
+            font-size: 40px;
+            color: white;
+            transform-origin: center;
+        }
+    }}

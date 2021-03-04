@@ -778,6 +778,244 @@ button:hover {
   height: 1000px;
 }
 
+/*------------MEDIA QUERIES----------*/
+/*-----------------TABLET--------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .photo {
+    position: relative;
+  }
+  .photo img {
+    top: -250px;
+  }
+
+  .fa-arrow-left {
+    font-size: 40px;
+  }
+
+  .drop_down_menu {
+    margin-top: 200px;
+  }
+  .drop_down_menu h2 {
+    font-size: 35px;
+    font-family: "Shrikhand", cursive;
+  }
+  .drop_down_menu .heart-2 {
+    top: 25px;
+    font-size: 25px;
+    margin-right: 100px;
+  }
+  .drop_down_menu .heart-2:hover .full-heart {
+    animation: fill_heart-2_tablet 1s;
+  }
+  .drop_down_menu .heart-2 .full-heart {
+    right: 4px;
+    bottom: 52px;
+    font-size: 30px;
+  }
+  .drop_down_menu button {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .container h3 {
+    font-size: 30px;
+  }
+  .container .menu__picker {
+    height: 70px;
+    padding: 20px 3% 20px 2%;
+    box-shadow: -1px 8px 30px -1px #bfbfbf;
+  }
+  .container .menu__picker:hover .checked {
+    animation: checked 2s;
+  }
+  .container .menu__picker:hover .text__price {
+    animation: reduce 2s;
+  }
+  .container .menu__picker:hover .price {
+    animation: move_price 2s;
+  }
+  .container .menu__picker:hover .fa-check-circle {
+    animation: turn-around 2s;
+  }
+  .container .text__price {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container h4 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .high__size {
+    height: 700px;
+  }
+}
+/*-----------------LITTLE-DESKTOP--------------------------------------*/
+@media only screen and (min-width: 1101px) and (max-width: 1400px) {
+  .photo {
+    position: relative;
+  }
+  .photo img {
+    top: -350px;
+  }
+
+  .fa-arrow-left {
+    font-size: 40px;
+  }
+
+  .drop_down_menu {
+    margin-top: 200px;
+  }
+  .drop_down_menu h2 {
+    font-size: 35px;
+    font-family: "Shrikhand", cursive;
+  }
+  .drop_down_menu .heart-2 {
+    top: 25px;
+    font-size: 25px;
+    margin-right: 100px;
+  }
+  .drop_down_menu .heart-2:hover .full-heart {
+    animation: fill_heart-2_tablet 1s;
+  }
+  .drop_down_menu .heart-2 .full-heart {
+    right: 5px;
+    bottom: 52px;
+    font-size: 30px;
+  }
+  .drop_down_menu button {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .container h3 {
+    font-size: 30px;
+  }
+  .container .menu__picker {
+    height: 70px;
+    padding: 20px 3% 20px 2%;
+    box-shadow: -1px 8px 30px -1px #bfbfbf;
+  }
+  .container .menu__picker:hover .checked {
+    animation: checked 2s;
+  }
+  .container .menu__picker:hover .text__price {
+    animation: reduce 2s;
+  }
+  .container .menu__picker:hover .price {
+    animation: move_price 2s;
+  }
+  .container .menu__picker:hover .fa-check-circle {
+    animation: turn-around 2s;
+  }
+  .container .text__price {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container h4 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .high__size {
+    height: 700px;
+  }
+}
+/*------------------DESKTOP--------------------------------------*/
+@media only screen and (min-width: 1401px) {
+  .photo {
+    position: relative;
+  }
+  .photo img {
+    top: -600px;
+  }
+
+  .fa-arrow-left {
+    font-size: 40px;
+  }
+
+  .drop_down_menu {
+    margin-top: 350px;
+  }
+  .drop_down_menu h2 {
+    font-size: 45px;
+    font-family: "Shrikhand", cursive;
+  }
+  .drop_down_menu .heart-2 {
+    top: 25px;
+    font-size: 27px;
+    margin-right: 100px;
+  }
+  .drop_down_menu .heart-2:hover .full-heart {
+    animation: fill_heart-2_tablet 1s;
+  }
+  .drop_down_menu .heart-2 .full-heart {
+    right: 6px;
+    bottom: 52px;
+    font-size: 30px;
+  }
+  .drop_down_menu button {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .container h3 {
+    font-size: 30px;
+  }
+  .container .menu__picker {
+    height: 70px;
+    padding: 20px 3% 20px 2%;
+    box-shadow: -1px 8px 30px -1px #bfbfbf;
+  }
+  .container .menu__picker:hover .checked {
+    animation: checked 2s;
+  }
+  .container .menu__picker:hover .text__price {
+    animation: reduce 2s;
+  }
+  .container .menu__picker:hover .price {
+    animation: move_price 2s;
+  }
+  .container .menu__picker:hover .fa-check-circle {
+    animation: turn-around 2s;
+  }
+  .container .text__price {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .container h4 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .high__size {
+    height: 700px;
+  }
+}
 .load-spinner {
   position: absolute;
   display: flex;
@@ -950,6 +1188,60 @@ button:hover {
     width: 67%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  /*ANIMATION CHECKED */
+  .checked {
+    position: absolute;
+    width: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: #99E2D0;
+    /*@include box__shadow-checked;*/
+  }
+  .checked .fa-check-circle {
+    padding: 40px;
+    font-size: 40px;
+    color: white;
+    transform-origin: center;
+  }
+}
+@media only screen and (min-width: 1101px) and (max-width: 1400px) {
+  /*ANIMATION CHECKED */
+  .checked {
+    position: absolute;
+    width: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: #99E2D0;
+    /*@include box__shadow-checked;*/
+  }
+  .checked .fa-check-circle {
+    padding: 40px;
+    font-size: 40px;
+    color: white;
+    transform-origin: center;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  /*ANIMATION CHECKED */
+  .checked {
+    position: absolute;
+    width: 0;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: #99E2D0;
+    /*@include box__shadow-checked;*/
+  }
+  .checked .fa-check-circle {
+    padding: 40px;
+    font-size: 40px;
+    color: white;
+    transform-origin: center;
+  }
+}
 .fa-heart {
   position: absolute;
   cursor: pointer;
@@ -1035,6 +1327,20 @@ button:hover {
   }
   100% {
     font-size: 11px;
+    opacity: 1;
+  }
+}
+@keyframes fill_heart-2_tablet {
+  0% {
+    font-size: 10px;
+    opacity: 0;
+  }
+  60% {
+    font-size: 16px;
+    opacity: 1;
+  }
+  100% {
+    font-size: 16px;
     opacity: 1;
   }
 }

@@ -118,3 +118,237 @@
 .high__size{
     height: 1000px;
 }
+
+/*------------MEDIA QUERIES----------*/
+/*-----------------TABLET--------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width : 1100px)  {
+    
+.photo {
+    position: relative;
+    img{
+    top: -250px;
+}
+}
+    
+.fa-arrow-left{
+    font-size: 40px;
+}
+.drop_down_menu{
+    margin-top: 200px;
+    h2{
+        font-size: 35px;
+        font-family: 'Shrikhand', cursive;
+    }
+    .heart-2{ 
+        top: 25px;
+        font-size: 25px;
+        margin-right: 100px;
+        &:hover .full-heart {
+            animation: fill_heart-2_tablet 1s;}
+        .full-heart{
+            right: 4px;
+            bottom: 52px;
+            font-size: 30px;
+        }
+        }
+    button{
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+    h3{
+        font-size: 30px;
+    }
+    .menu__picker{
+        height: 70px;
+        padding: 20px 3% 20px 2%;
+        @include box__shadow;
+        &:hover .checked{
+            animation: checked 2s;
+        }
+        &:hover .text__price{
+            animation: reduce 2s;
+        }
+        &:hover .price{
+            animation: move_price 2s;
+        }
+        &:hover .fa-check-circle{
+            animation: turn-around 2s;
+        }
+    }
+    .text__price{
+        font-size: 25px;
+        margin-top: 0; margin-bottom: 0;
+    }
+
+    h4{
+        font-size: 30px;
+        margin-top: 0; margin-bottom: 0; 
+    }
+}
+.high__size{
+    height: 700px;
+}
+}
+/*-----------------LITTLE-DESKTOP--------------------------------------*/
+@media only screen and (min-width: 1101px) and (max-width : 1400px)  {
+    
+    .photo {
+        position: relative;
+        img{
+        top: -350px;
+    }
+    }
+        
+    .fa-arrow-left{
+        font-size: 40px;
+    }
+    .drop_down_menu{
+        margin-top: 200px;
+        h2{
+            font-size: 35px;
+            font-family: 'Shrikhand', cursive;
+        }
+        .heart-2{ 
+            top: 25px;
+            font-size: 25px;
+            margin-right: 100px;
+            &:hover .full-heart {
+                animation: fill_heart-2_tablet 1s;}
+            .full-heart{
+                right: 5px;
+                bottom: 52px;
+                font-size: 30px;
+            }
+            }
+        button{
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+    }
+    
+    .container {
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        
+        h3{
+            font-size: 30px;
+        }
+        .menu__picker{
+            height: 70px;
+            padding: 20px 3% 20px 2%;
+            @include box__shadow;
+            &:hover .checked{
+                animation: checked 2s;
+            }
+            &:hover .text__price{
+                animation: reduce 2s;
+            }
+            &:hover .price{
+                animation: move_price 2s;
+            }
+            &:hover .fa-check-circle{
+                animation: turn-around 2s;
+            }
+        }
+        .text__price{
+            font-size: 25px;
+            margin-top: 0; margin-bottom: 0;
+        }
+    
+        h4{
+            font-size: 30px;
+            margin-top: 0; margin-bottom: 0; 
+        }
+    }
+    .high__size{
+        height: 700px;
+    }
+    }
+
+/*------------------DESKTOP--------------------------------------*/
+@media only screen and (min-width: 1401px)  {
+    
+    .photo {
+        position: relative;
+        img{
+        top: -600px;
+    }
+    }
+        
+    .fa-arrow-left{
+        font-size: 40px;
+    }
+    .drop_down_menu{
+        margin-top: 350px;
+        h2{
+            font-size: 45px;
+            font-family: 'Shrikhand', cursive;
+        }
+        .heart-2{ 
+            top: 25px;
+            font-size: 27px;
+            margin-right: 100px;
+            &:hover .full-heart {
+                animation: fill_heart-2_tablet 1s;}
+                .full-heart{
+                    right: 6px;
+                    bottom: 52px;
+                    font-size: 30px;
+                }
+            }
+        button{
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+    }
+    
+    .container {
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        
+        h3{
+            font-size: 30px;
+        }
+        .menu__picker{
+            height: 70px;
+            padding: 20px 3% 20px 2%;
+            @include box__shadow;
+            &:hover .checked{
+                animation: checked 2s;
+            }
+            &:hover .text__price{
+                animation: reduce 2s;
+            }
+            &:hover .price{
+                animation: move_price 2s;
+            }
+            &:hover .fa-check-circle{
+                animation: turn-around 2s;
+            }
+        }
+        .text__price{
+            font-size: 25px;
+            margin-top: 0; margin-bottom: 0;
+        }
+    
+        h4{
+            font-size: 30px;
+            margin-top: 0; margin-bottom: 0; 
+        }
+    }
+    .high__size{
+        height: 700px;
+    }
+    }
