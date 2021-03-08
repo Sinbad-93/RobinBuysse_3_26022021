@@ -6,16 +6,25 @@
         bottom: 50px;
         font-size: 28px;
         color: darken($font-color,60%);
-        transform: scale(1.5,1.8);
-        &:hover .full-heart {
-            animation: fill_heart_desktop 1s;}
+        &:hover .heart_appear {
+            animation : put_up 2s;}
         }
     .full-heart {
-        right: 5px;
+        height: 16px;
+        right:6px;
         bottom: 6px;
         color: $color-primary;
-        opacity: 0;
-        transform: scale(1.5,1.6);
+        transform: scale(1.7,1.5);
+        opacity: 1;
+        z-index: -1;
+    }
+    .heart_appear{
+        position: absolute;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        z-index: -1;
     }
 }
 
@@ -116,7 +125,7 @@
         width: 30%;
         height: 350px;
     }
-    img {
+    .picture {
         top: 0px;
     }
     h3{

@@ -1,6 +1,6 @@
 
 /*-----MEDIA QUERIES ----------------*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 
 header{
     line-height: 100px;
@@ -40,7 +40,7 @@ button {
 }
 }
 
-@media screen and (min-width: 768px) and (max-width : 1099px)  {
+@media screen and (min-width: 767px) and (max-width : 1099px)  {
 
 .city_header{
     height: 150px;
@@ -137,7 +137,7 @@ button {
         height: 350px;
         ;
     }
-    img {
+    .picture {
         max-width: 150%;
         max-height: 150%;
         top: 0px;
@@ -264,14 +264,16 @@ footer{
     font-size: 18px;
     color: darken($font-color,60%);
     transform: scale(1.5,1.8);
-    &:hover .full-heart {
-        animation: fill_heart_tablet 1s;}
+    &:hover .heart_appear {
+        animation : put_up 2s;}
     }
 .full-heart {
-    right: 4px;
-    bottom: 3px;
+    right: 5px;
+    bottom: 5px;
+    height: 9px;
     color: $color-primary;
-    opacity: 0;
+    opacity: 1;
+    z-index: -1;
     transform: scale(1.5,1.6);
 }
 }

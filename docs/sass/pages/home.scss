@@ -113,7 +113,7 @@
         object-fit: cover;
         @include box__shadow_light;
     }
-    img {
+    .picture {
         position: absolute;
         max-width: 100%;
         top: -150px;

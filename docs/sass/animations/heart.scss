@@ -7,23 +7,30 @@
     font-size: 38px;
     color: darken($font-color,60%);
     transform: scale(1.5,1.8);
-    &:hover .full-heart {
-        animation: fill_heart 1s;}
+    &:hover .heart_appear {
+        animation : put_up 2s;}
     }
 .full-heart {
-    font-size: 27px;
-    right: 5px;
-    bottom: 6px;
+    height: 21px;
+    right: 8px;
+    bottom: 8px;
     color: $color-primary;
-    opacity: 0;
+    opacity: 1;
+    z-index: -1;
     transform: scale(1.5,1.6);
-    /*&:hover {
-        animation: fill_heart 1s;
-     }*/
 }
 .empty-heart{
-    margin-right: 40px;
-}
+    margin-right: 40px;}
+    
+ .heart_appear{
+        position: absolute;
+        top: 0;
+        width: 35px;
+        height: 30px;
+        background-color: white;
+        z-index: -1;
+    }
+
 @keyframes fill_heart{
     0%{
 font-size: 10px;opacity: 0;
@@ -52,7 +59,7 @@ font-size: 10px;opacity: 0;
 /*animation version bureau*/
 @keyframes fill_heart_desktop{
     0%{
-font-size: 10px;opacity: 0;
+        font-size: 10px;opacity: 0;
     }
     50%{
         font-size: 17px;opacity: 1;
@@ -86,3 +93,14 @@ font-size: 10px;opacity: 0;
         font-size: 16px;opacity: 1;
     }
 }
+
+@keyframes put_up{
+    0%{
+    height: 30px;
+    }
+
+    100%{
+    height: 2px;
+    }
+}
+
