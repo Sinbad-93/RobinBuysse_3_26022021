@@ -8,8 +8,8 @@
     background-color: $color-tertiary;
     /*@include box__shadow-checked;*/
     .fa-check-circle{
-        padding: 65px;
-        font-size: 70px;
+        padding: 25px;
+        font-size: 20px;
         color: white;
         transform-origin: center;
     }
@@ -24,7 +24,7 @@
 }
 @keyframes move_price {
     from{right: 20px;}
-    to{right: 210px;}
+    to{right: 80px;}
 }
 @keyframes reduce {
     from{width: 90%;}

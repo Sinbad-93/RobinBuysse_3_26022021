@@ -11,28 +11,28 @@
     animation: loadSpinner__font 2.8s;
     p{
         position: absolute;
-        font-size: 50px;
-        top: 25%;
+        font-size: 20px;
+        top: 5%;
     }
 }
 .load-spinner__rect {
     position: relative;
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 180px;
     align-self: center;
     background-color: white;
     img{
         position: relative;
-        height: 300px;
+        height: 180px;
         background-color: transparent;
         z-index: 4;
     }
     .plate_circle-in{
         position: absolute;
         align-self: center;
-        width: 100px;
-        height: 100px;
+        width: 55px;
+        height: 55px;
         border-radius: 50%;
         background-color: $color-secondary;
         z-index: 3;
@@ -42,8 +42,8 @@
     .plate_circle-out{
         position: absolute;
         align-self: center;
-        width: 210px;
-        height: 210px;
+        width: 128px;
+        height: 128px;
         border-radius: 50%;
         background-color: $color-secondary;
         z-index: 2;
@@ -54,10 +54,10 @@
     .fork_object{
         position: absolute;
         align-self: center;
-        width: 30px;
-        height: 150px;
-        left: 30px;
-        top: 130px;
+        width: 20px;
+        height: 80px;
+        left:12px;
+        top: 80px;
         z-index: 3;
         background-color: $color-tertiary;
         opacity:0;
@@ -66,10 +66,10 @@
     .fork_object-top{
         position: absolute;
         align-self: center;
-        width: 60px;
+        width: 30px;
         height: 20px;
         left: 10px;
-        top: 100px;
+        top: 60px;
         z-index: 3;
         background-color: $color-tertiary;
         opacity:0;
@@ -78,10 +78,10 @@
     .knife_object{
         position: absolute;
         align-self: center;
-        width: 30px;
-        height: 230px;
-        right: 20px;
-        top: 40px;
+        width: 20px;
+        height: 140px;
+        right: 11px;
+        top: 20px;
         z-index: 3;
         background-color: $color-tertiary;
         opacity:0;

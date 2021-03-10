@@ -2,20 +2,21 @@
 .fa-heart{
     position: absolute;
     cursor: pointer;
-    right: 50px;
-    bottom: 100px;
-    font-size: 38px;
+    right: 0px;
+    bottom: 50px;
+    font-size: 15px;
     color: darken($font-color,60%);
     transform: scale(1.5,1.8);
     &:hover .heart_appear {
         animation : put_up 1.2s;}
+        &:hover .full-heart{
+            animation : fill_heart 1.2s;
+        }
     }
 .full-heart {
-    height: 21px;
-    right: 8px;
-    bottom: 8px;
-    color: $color-primary;
-    opacity: 1;
+    height: 9px;
+    right: 3px;
+    bottom: 4px;
     z-index: -1;
     transform: scale(1.5,1.6);
 }
@@ -24,26 +25,33 @@
     
  .heart_appear{
         position: absolute;
-        top: 0;
-        width: 35px;
-        height: 30px;
-        background-color: white;
+        top: 0px;
+        left: -2px;
+        width: 25px;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
         z-index: -1;
     }
 
-@keyframes fill_heart{
-    0%{
-font-size: 10px;opacity: 0;
+.heart-2 {
+    &:hover .heart_appear{
+        animation : put_up2 1.2s;
     }
-    50%{
-        font-size: 26px;opacity: 1;
-    }
-    100%{
-        font-size: 26px;opacity: 1;
+    &:hover .full-heart{
+        animation : fill_heart 1.4s;
     }
 }
 
-@keyframes fill_heart-2{
+@keyframes fill_heart{
+    0%{
+opacity: 1;
+    }
+    100%{
+opacity: 1;
+    }
+}
+
+/*@keyframes fill_heart-2{
     0%{
 font-size: 10px;opacity: 0;
     }
@@ -53,7 +61,7 @@ font-size: 10px;opacity: 0;
     100%{
         font-size: 26px;opacity: 1;
     }
-}
+}*/
 
 /*-----MEDIA QUERIES ----------------*/
 /*animation version bureau*/
@@ -82,7 +90,7 @@ font-size: 10px;opacity: 0;
     }
 }
 
-@keyframes fill_heart-2_tablet{
+/*@keyframes fill_heart-2_tablet{
     0%{
 font-size: 10px;opacity: 0;
     }
@@ -92,15 +100,27 @@ font-size: 10px;opacity: 0;
     100%{
         font-size: 16px;opacity: 1;
     }
-}
+}*/
 
 @keyframes put_up{
     0%{
-    height: 30px;
+    height: 10px;
     }
 
     100%{
-    height: 2px;
+    height: 1px;
+    }
+}
+
+@keyframes put_up2{
+    0%{
+    height: 20px;
+
+    }
+
+    100%{
+    height: 1px;
+
     }
 }
 
