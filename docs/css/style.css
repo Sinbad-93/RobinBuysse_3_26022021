@@ -31,7 +31,7 @@ header {
 }
 header h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 7vw !important;
+  font-size: 7vw;
   margin: 0;
 }
 
@@ -553,6 +553,30 @@ button:hover {
     right: 80px;
   }
 }
+@keyframes move_price_2 {
+  from {
+    right: 20px;
+  }
+  to {
+    right: 190px;
+  }
+}
+@keyframes move_price_3 {
+  from {
+    right: 20px;
+  }
+  to {
+    right: 270px;
+  }
+}
+@keyframes move_price_desktop {
+  from {
+    right: 20px;
+  }
+  to {
+    right: 130px;
+  }
+}
 @keyframes reduce {
   from {
     width: 90%;
@@ -683,6 +707,14 @@ font-size: 10px;opacity: 0;
     height: 1px;
   }
 }
+@keyframes put_up_3 {
+  0% {
+    height: 30px;
+  }
+  100% {
+    height: 1px;
+  }
+}
 /* ---BOUCLE SASS--- .anim-menu-1à10 */
 .anim_menu-1 {
   animation: appear 2.5s;
@@ -765,12 +797,16 @@ font-size: 10px;opacity: 0;
     height: 150px;
     padding: 0;
     padding-right: 30px;
-    padding-left: 50px;
+    padding-left: 30px;
     font-size: 25px;
   }
   footer h3 {
     font-family: "Shrikhand", cursive;
     font-size: 40px;
+  }
+  footer p {
+    margin-left: 20px;
+    text-align: center;
   }
 
   button {
@@ -781,7 +817,7 @@ font-size: 10px;opacity: 0;
 }
 @media screen and (min-width: 767px) and (max-width: 1099px) {
   .city_header {
-    height: 150px;
+    height: 340px;
     background-color: transparent;
   }
   .city_header > h2 {
@@ -791,7 +827,7 @@ font-size: 10px;opacity: 0;
   }
   .city_header > p {
     display: inline;
-    font-size: 25px;
+    font-size: 20px;
   }
   .city_header > div {
     margin: auto;
@@ -800,10 +836,10 @@ font-size: 10px;opacity: 0;
     align-content: center;
     width: 50%;
     font-size: 25px;
-    height: 30%;
+    height: 10%;
   }
   .city_header button {
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -813,52 +849,52 @@ font-size: 10px;opacity: 0;
   }
 
   .rules_container {
-    height: 200px;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    height: 130px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     justify-content: center;
   }
   .rules_container h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 40px;
-    margin-top: 120px;
+    margin-top: 0px;
   }
   .rules_container .rules {
     width: 25%;
     height: 80px;
-    font-size: 25px;
-    padding-right: 60px;
+    font-size: 15px;
+    padding-right: 20px;
   }
   .rules_container span {
     align-self: flex-end;
     justify-self: center;
     height: auto;
-    width: 45%;
-    font-size: 17px;
+    width: 65%;
+    font-size: 18px;
     text-align: left;
   }
   .rules_container i {
     position: absolute;
     margin-right: 0;
-    margin-left: 80px;
+    margin-left: 30px;
     left: 0;
     align-self: flex-start;
   }
   .rules_container .fa-store {
-    font-size: 23px;
+    font-size: 20px;
   }
   .rules_container .fa-mobile-alt {
-    font-size: 28px;
+    font-size: 20px;
   }
   .rules_container .fa-list {
-    font-size: 25px;
+    font-size: 20px;
   }
   .rules_container .number {
-    top: 10%;
+    top: 30%;
   }
 
   .restaurants_container {
-    height: 1000px;
+    height: 700px;
     justify-content: center;
     padding-bottom: 150px;
   }
@@ -867,9 +903,9 @@ font-size: 10px;opacity: 0;
     text-align: center;
   }
   .restaurants_container article {
-    margin: 40px;
-    width: 30%;
-    height: 350px;
+    margin: 20px;
+    width: 35%;
+    height: 280px;
   }
   .restaurants_container .picture {
     max-width: 150%;
@@ -877,10 +913,10 @@ font-size: 10px;opacity: 0;
     top: 0px;
   }
   .restaurants_container h3 {
-    font-size: 27px;
+    font-size: 22px;
   }
   .restaurants_container h4 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .new {
@@ -911,30 +947,40 @@ font-size: 10px;opacity: 0;
   .photo img {
     top: -250px;
   }
+  .photo .note_photo {
+    top: -420px;
+  }
 
   .fa-arrow-left {
     font-size: 40px;
   }
 
   .drop_down_menu {
-    margin-top: 200px;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    margin-top: 250px;
   }
   .drop_down_menu h2 {
+    margin-left: 40px;
     font-size: 35px;
     font-family: "Shrikhand", cursive;
   }
   .drop_down_menu .heart-2 {
-    top: 25px;
+    top: 10px;
     font-size: 25px;
     margin-right: 100px;
   }
   .drop_down_menu .heart-2:hover .heart_appear {
-    animation: put-up2 2s;
+    animation: put_up2 2s;
   }
   .drop_down_menu .heart-2 .full-heart {
-    right: 4px;
+    right: 5px;
     bottom: 52px;
-    font-size: 30px;
+    height: 15px;
+  }
+  .drop_down_menu .heart-2 .heart_appear {
+    left: 2px;
+    top: 48px;
   }
   .drop_down_menu button {
     margin-top: 70px;
@@ -962,7 +1008,7 @@ font-size: 10px;opacity: 0;
     animation: reduce 2s;
   }
   .container .menu__picker:hover .price {
-    animation: move_price 2s;
+    animation: move_price_2 2s;
   }
   .container .menu__picker:hover .fa-check-circle {
     animation: turn-around 2s;
@@ -999,61 +1045,27 @@ font-size: 10px;opacity: 0;
     transform-origin: center;
   }
 
-  .fa-heart {
-    bottom: 30px;
-    font-size: 18px;
-    color: #595959;
-    transform: scale(1.5, 1.8);
-  }
-  .fa-heart:hover .heart_appear {
-    animation: put_up 2s;
-  }
-
+  /*.fa-heart{
+      bottom: 30px;
+      font-size: 18px;
+      color: darken($font-color,60%);
+      transform: scale(1.5,1.8);
+      &:hover .heart_appear {
+          animation : put_up 2s;}
+      }
   .full-heart {
-    right: 5px;
-    bottom: 5px;
-    height: 9px;
-    color: #9356DC;
-    opacity: 1;
-    z-index: -1;
-    transform: scale(1.5, 1.6);
-  }
-}
-/*------MEDIA QUERIES--------*/
-@media screen and (min-width: 1100px) {
-  /*anim coeur*/
-  .fa-heart {
-    bottom: 50px;
-    font-size: 28px;
-    color: #595959;
-  }
-  .fa-heart:hover .heart_appear {
-    animation: put_up2 1.2s;
-  }
-
-  .full-heart {
-    height: 16px;
-    right: 6px;
-    bottom: 6px;
-    color: #9356DC;
-    transform: scale(1.7, 1.5);
-    opacity: 1;
-    z-index: -1;
-  }
-
-  .heart_appear {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    z-index: -1;
-  }
+      right: 5px;
+      bottom: 5px;
+      height: 9px;
+      color: $color-primary;
+      opacity: 1;
+      z-index: -1;
+      transform: scale(1.5,1.6);
+  }*/
 }
 @media screen and (min-width: 1100px) and (max-width: 1400px) {
   .city_header {
-    height: 150px;
+    height: 300px;
     background-color: transparent;
   }
   .city_header > h2 {
@@ -1072,7 +1084,7 @@ font-size: 10px;opacity: 0;
     align-content: center;
     width: 50%;
     font-size: 25px;
-    height: 30%;
+    height: 10%;
   }
   .city_header button {
     margin-left: 80px;
@@ -1085,9 +1097,9 @@ font-size: 10px;opacity: 0;
   }
 
   .rules_container {
-    height: 200px;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    height: 300px;
+    margin-top: -50px;
+    margin-bottom: 0px;
     justify-content: center;
   }
   .rules_container h2 {
@@ -1106,7 +1118,7 @@ font-size: 10px;opacity: 0;
     justify-self: center;
     height: auto;
     width: 40%;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     text-align: left;
   }
   .rules_container i {
@@ -1136,6 +1148,7 @@ font-size: 10px;opacity: 0;
   }
   .restaurants_container h2 {
     font-size: 40px;
+    margin-top: 80px;
     text-align: center;
   }
   .restaurants_container article {
@@ -1173,30 +1186,40 @@ font-size: 10px;opacity: 0;
   .photo img {
     top: -350px;
   }
+  .photo .note_photo {
+    top: -800px;
+  }
 
   .fa-arrow-left {
     font-size: 40px;
   }
 
   .drop_down_menu {
-    margin-top: 200px;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    margin-top: 250px;
   }
   .drop_down_menu h2 {
+    margin-left: 70px;
     font-size: 35px;
     font-family: "Shrikhand", cursive;
   }
   .drop_down_menu .heart-2 {
-    top: 25px;
-    font-size: 25px;
+    top: 10px;
+    font-size: 27px;
     margin-right: 100px;
   }
   .drop_down_menu .heart-2:hover .heart_appear {
-    animation: put-up2 1s;
+    animation: put_up2 2s;
   }
   .drop_down_menu .heart-2 .full-heart {
     right: 5px;
     bottom: 52px;
-    font-size: 30px;
+    height: 17px;
+  }
+  .drop_down_menu .heart-2 .heart_appear {
+    left: 2px;
+    top: 48px;
   }
   .drop_down_menu button {
     margin-top: 70px;
@@ -1224,7 +1247,7 @@ font-size: 10px;opacity: 0;
     animation: reduce 2s;
   }
   .container .menu__picker:hover .price {
-    animation: move_price 2s;
+    animation: move_price_3 2s;
   }
   .container .menu__picker:hover .fa-check-circle {
     animation: turn-around 2s;
@@ -1323,7 +1346,7 @@ font-size: 10px;opacity: 0;
   .rules_container i {
     position: absolute;
     margin-right: 0;
-    margin-left: 80px;
+    margin-left: 40px;
     left: 0;
     top: 20px;
     align-self: flex-start;
@@ -1347,6 +1370,7 @@ font-size: 10px;opacity: 0;
     padding-bottom: 150px;
   }
   .restaurants_container h2 {
+    margin-top: 100px;
     font-size: 40px;
     text-align: center;
   }
@@ -1356,13 +1380,38 @@ font-size: 10px;opacity: 0;
     height: 350px;
   }
   .restaurants_container .picture {
-    top: -100x;
+    top: -20px;
   }
   .restaurants_container h3 {
-    font-size: 27px;
+    font-size: 30px;
   }
   .restaurants_container h4 {
+    font-size: 28px;
+  }
+  .restaurants_container .fa-heart {
     font-size: 25px;
+  }
+  .restaurants_container .fa-heart:hover .heart_appear {
+    animation: put_up_3 1.2s;
+  }
+  .restaurants_container .fa-heart:hover .full-heart {
+    animation: fill_heart 1.2s;
+  }
+  .restaurants_container .full-heart {
+    height: 15px;
+    right: 4px;
+    bottom: 5px;
+    z-index: -1;
+    transform: scale(1.5, 1.6);
+  }
+  .restaurants_container .heart_appear {
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    width: 35px;
+    height: 30px;
+    background-color: white;
+    z-index: -1;
   }
 
   .new {
@@ -1383,7 +1432,10 @@ font-size: 10px;opacity: 0;
     position: relative;
   }
   .photo img {
-    top: -600px;
+    top: -400px;
+  }
+  .photo .note_photo {
+    top: -900px;
   }
 
   .fa-arrow-left {
@@ -1391,24 +1443,37 @@ font-size: 10px;opacity: 0;
   }
 
   .drop_down_menu {
-    margin-top: 350px;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    margin-top: 280px;
   }
   .drop_down_menu h2 {
+    margin: 0;
+    margin-left: 80px;
     font-size: 45px;
     font-family: "Shrikhand", cursive;
   }
   .drop_down_menu .heart-2 {
-    top: 25px;
-    font-size: 27px;
+    top: -15px;
+    font-size: 30px;
     margin-right: 100px;
   }
   .drop_down_menu .heart-2:hover .heart_appear {
-    animation: put-up2 1s;
+    animation: put_up_3 1.3s;
   }
   .drop_down_menu .heart-2 .full-heart {
     right: 6px;
-    bottom: 52px;
-    font-size: 30px;
+    bottom: 51px;
+    height: 17px;
+  }
+  .drop_down_menu .heart-2 .heart_appear {
+    position: absolute;
+    top: 45px;
+    left: -2px;
+    width: 35px;
+    height: 30px;
+    background-color: #F2F2F2;
+    z-index: -1;
   }
   .drop_down_menu button {
     margin-top: 70px;
@@ -1416,17 +1481,24 @@ font-size: 10px;opacity: 0;
   }
 
   .container {
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    justify-content: space-around;
   }
   .container h3 {
     font-size: 30px;
+    font-weight: bold;
+    margin-right: 60%;
+  }
+  .container .underline {
+    width: 300px;
   }
   .container .menu__picker {
     height: 70px;
     padding: 20px 3% 20px 2%;
+    width: 30%;
     box-shadow: -1px 5px 10px -1px #d9d9d9;
   }
   .container .menu__picker:hover .checked {
@@ -1436,24 +1508,24 @@ font-size: 10px;opacity: 0;
     animation: reduce 2s;
   }
   .container .menu__picker:hover .price {
-    animation: move_price 2s;
+    animation: move_price_desktop 2s;
   }
   .container .menu__picker:hover .fa-check-circle {
     animation: turn-around 2s;
   }
   .container .text__price {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 0;
     margin-bottom: 0;
   }
   .container h4 {
-    font-size: 30px;
+    font-size: 22px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   .high__size {
-    height: 700px;
+    height: 450px;
   }
 
   /*ANIMATION CHECKED */
@@ -1471,6 +1543,12 @@ font-size: 10px;opacity: 0;
     font-size: 40px;
     color: white;
     transform-origin: center;
+  }
+
+  .load-spinner p {
+    position: absolute;
+    font-size: 40px;
+    top: 10%;
   }
 }
 

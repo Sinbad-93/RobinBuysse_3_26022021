@@ -60,7 +60,7 @@
     i{
         position: absolute;
         margin-right: 0;
-        margin-left: 80px;
+        margin-left: 40px;
         left: 0;
         top: 20px;
         align-self: flex-start;
@@ -87,6 +87,7 @@
     padding-bottom: 150px;
     
     h2{
+        margin-top: 100px;
         font-size: 40px;
         text-align: center;
     }
@@ -96,14 +97,38 @@
         height: 350px;
     }
     .picture {
-        top: -100x;
+        top: -20px;
     }
     h3{
-        font-size: 27px;
+        font-size: 30px;
     }
     h4{
-        font-size: 25px;
+        font-size: 28px;
     }
+    .fa-heart{
+        font-size: 25px;
+        &:hover .heart_appear {
+            animation : put_up_3 1.2s;}
+            &:hover .full-heart{
+                animation : fill_heart 1.2s;
+            }
+        }
+    .full-heart {
+        height: 15px;
+        right: 4px;
+        bottom: 5px;
+        z-index: -1;
+        transform: scale(1.5,1.6);
+    }
+     .heart_appear{
+            position: absolute;
+            top: 0px;
+            left: -2px;
+            width: 35px;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            z-index: -1;
+        }
 }
 .new{
     position: absolute;
@@ -117,11 +142,15 @@
     top: -230px;
 }}
 
+
 /*----RESTAURANT------------*/
 .photo {
     position: relative;
     img{
-    top: -600px;
+    top: -400px;
+}
+.note_photo{
+    top: -900px
 }
 }
     
@@ -129,21 +158,34 @@
     font-size: 40px;
 }
 .drop_down_menu{
-    margin-top: 350px;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    margin-top: 280px;
     h2{
+        margin: 0;
+        margin-left: 80px;
         font-size: 45px;
         font-family: 'Shrikhand', cursive;
     }
     .heart-2{ 
-        top: 25px;
-        font-size: 27px;
+        top: -15px;
+        font-size: 30px;
         margin-right: 100px;
         &:hover .heart_appear {
-            animation: put-up2 1s;}
+            animation: put_up_3 1.3s;}
             .full-heart{
                 right: 6px;
-                bottom: 52px;
-                font-size: 30px;
+                bottom: 51px;
+                height: 17px;
+            }
+            .heart_appear{
+                position: absolute;
+                top: 45px;
+                left: -2px;
+                width: 35px;
+                height: 30px;
+                background-color: $font-color;
+                z-index: -1;
             }
         }
     button{
@@ -153,17 +195,24 @@
 }
 
 .container {
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    justify-content: space-around;
     
     h3{
         font-size: 30px;
+        font-weight: bold;
+        margin-right: 60%;
+    }
+    .underline{
+        width: 300px;
     }
     .menu__picker{
         height: 70px;
         padding: 20px 3% 20px 2%;
+        width: 30%;
         @include box__shadow;
         &:hover .checked{
             animation: checked 2s;
@@ -172,24 +221,24 @@
             animation: reduce 2s;
         }
         &:hover .price{
-            animation: move_price 2s;
+            animation: move_price_desktop 2s;
         }
         &:hover .fa-check-circle{
             animation: turn-around 2s;
         }
     }
     .text__price{
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 0; margin-bottom: 0;
     }
 
     h4{
-        font-size: 30px;
+        font-size: 22px;
         margin-top: 0; margin-bottom: 0; 
     }
 }
 .high__size{
-    height: 700px;
+    height: 450px;
 }
 /*ANIMATION CHECKED */
 .checked {
@@ -207,4 +256,12 @@
         transform-origin: center;
     }
 }
+.load-spinner {
+    p{
+        position: absolute;
+        font-size: 40px;
+        top: 10%;
+    }
 }
+}
+

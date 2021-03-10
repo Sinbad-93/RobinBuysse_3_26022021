@@ -26,6 +26,18 @@
     from{right: 20px;}
     to{right: 80px;}
 }
+@keyframes move_price_2 {
+    from{right: 20px;}
+    to{right: 190px;}
+}
+@keyframes move_price_3 {
+    from{right: 20px;}
+    to{right: 270px;}
+}
+@keyframes move_price_desktop {
+    from{right: 20px;}
+    to{right: 130px;}
+}
 @keyframes reduce {
     from{width: 90%;}
     to{width: 67%;}
