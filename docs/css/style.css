@@ -557,7 +557,7 @@ button:hover {
   transform: scale(1.5, 1.8);
 }
 .fa-heart:hover .heart_appear {
-  animation: put_up 2s;
+  animation: put_up 1.2s;
 }
 
 .full-heart {
@@ -1009,7 +1009,7 @@ button:hover {
     color: #595959;
   }
   .fa-heart:hover .heart_appear {
-    animation: put_up 2s;
+    animation: put_up 1.2s;
   }
 
   .full-heart {
@@ -1025,6 +1025,7 @@ button:hover {
   .heart_appear {
     position: absolute;
     top: 0;
+    left: 0;
     width: 30px;
     height: 30px;
     background-color: white;

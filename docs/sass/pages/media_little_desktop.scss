@@ -7,7 +7,7 @@
         font-size: 28px;
         color: darken($font-color,60%);
         &:hover .heart_appear {
-            animation : put_up 2s;}
+            animation : put_up 1.2s;}
         }
     .full-heart {
         height: 16px;
@@ -21,6 +21,7 @@
     .heart_appear{
         position: absolute;
         top: 0;
+        left:0;
         width: 30px;
         height: 30px;
         background-color: white;
