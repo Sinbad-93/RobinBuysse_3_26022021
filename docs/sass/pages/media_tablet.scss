@@ -168,7 +168,7 @@ footer{
 }
 /*resize one particular picture*/
 .restaurants_container {.note_photo{
-    top: -230px;
+    top: -130px;
 }}
 
 /*----------RESTAURANTS------------*/
@@ -272,23 +272,5 @@ footer{
         transform-origin: center;
     }
 }
-
-/*.fa-heart{
-    bottom: 30px;
-    font-size: 18px;
-    color: darken($font-color,60%);
-    transform: scale(1.5,1.8);
-    &:hover .heart_appear {
-        animation : put_up 2s;}
-    }
-.full-heart {
-    right: 5px;
-    bottom: 5px;
-    height: 9px;
-    color: $color-primary;
-    opacity: 1;
-    z-index: -1;
-    transform: scale(1.5,1.6);
-}*/
 }
 

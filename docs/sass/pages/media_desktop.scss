@@ -1,4 +1,3 @@
-
 /* -----------------DESKTOP ---------------------------*/
 @media screen and (min-width: 1401px)  { 
     .city_header{
@@ -66,8 +65,7 @@
         align-self: flex-start;
     }
     .fa-store{
-        font-size: 23px;
-;
+        font-size: 23px;;
     }
     .fa-mobile-alt{
         font-size: 28px;
@@ -141,8 +139,6 @@
 .restaurants_container {.note_photo{
     top: -230px;
 }}
-
-
 /*----RESTAURANT------------*/
 .photo {
     position: relative;
@@ -193,7 +189,6 @@
         margin-bottom: 70px;
     }
 }
-
 .container {
     height: 400px;
     display: flex;
