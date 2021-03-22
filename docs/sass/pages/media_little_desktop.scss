@@ -214,6 +214,7 @@
  .checked {
     position: absolute;
     display: flex;
+    justify-content: center;
     width: 0;
     right: 0;
     top: 0;
@@ -222,7 +223,7 @@
     /*@include box__shadow-checked;*/
     .fa-check-circle{
         align-self: center;
-        padding:0 80px 0 80px ;
+        justify-self: center;
         font-size: 40px;
         color: white;
         transform-origin: center;
