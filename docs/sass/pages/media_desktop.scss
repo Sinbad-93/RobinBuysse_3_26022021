@@ -1,15 +1,16 @@
 /* -----------------DESKTOP ---------------------------*/
 @media screen and (min-width: 1401px)  { 
     .city_header{
-    height: 150px;
+    height: 250px;
     background-color: transparent;
     > h2 {
         font-size: 35px;
         margin-left: 150px;
         margin-right: 150px;
+        
     }
     > p {
-        display: inline;
+        /*display: inline;*/
         font-size: 25px;
     }
     > div {
@@ -19,12 +20,12 @@
         align-content: center;
         width: 50%;
         font-size: 25px;
-        height: 30%;
+        height: 20%;
     }
     button{
-        margin-left: 80px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-left: auto;
+        margin-top: 40px;
+        margin-bottom: 0px;
     }
     span {
         line-height: 28px;
@@ -33,14 +34,16 @@
 }
 
 .rules_container{
-    height: 200px ;
+    height: 300px ;
     margin-top: 80px;
     margin-bottom: 20px;
     justify-content: center;
     h2 {
         font-size: 30px;
-        margin-left: 40px;
-        margin-top: 120px;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        text-align: center;
     }
     .rules {
         width: 25%;
@@ -76,7 +79,7 @@
 
     }
     .number {
-        top: 10%;
+        align-self: center;
     }
 }
 .restaurants_container {
@@ -85,7 +88,7 @@
     padding-bottom: 150px;
     
     h2{
-        margin-top: 100px;
+        margin-top: 50px;
         font-size: 40px;
         text-align: center;
     }
@@ -106,14 +109,14 @@
     .fa-heart{
         font-size: 25px;
         &:hover .heart_appear {
-            animation : put_up_3 1.2s;}
+            animation : put_up_3 1.2s forwards;}
             &:hover .full-heart{
-                animation : fill_heart 1.2s;
+                animation : fill_heart 1.2s forwards;
             }
         }
     .full-heart {
-        height: 15px;
-        right: 4px;
+        height: 14px;
+        right: 5px;
         bottom: 5px;
         z-index: -1;
         transform: scale(1.5,1.6);
@@ -168,7 +171,7 @@
         font-size: 30px;
         margin-right: 100px;
         &:hover .heart_appear {
-            animation: put_up_3 1.3s;}
+            animation: put_up_3 1.3s forwards;}
             .full-heart{
                 right: 6px;
                 bottom: 51px;
@@ -210,16 +213,16 @@
         width: 30%;
         @include box__shadow;
         &:hover .checked{
-            animation: checked 2s;
+            animation: checked 2s forwards;
         }
         &:hover .text__price{
-            animation: reduce 2s;
+            animation: reduce 2s forwards;
         }
         &:hover .price{
-            animation: move_price_desktop 2s;
+            animation: move_price_desktop 2s forwards;
         }
         &:hover .fa-check-circle{
-            animation: turn-around 2s;
+            animation: turn-around 2s forwards;
         }
     }
     .text__price{
@@ -238,6 +241,7 @@
 /*ANIMATION CHECKED */
 .checked {
     position: absolute;
+    display: flex;
     width: 0;
     right: 0;
     top: 0;
@@ -245,7 +249,8 @@
     background-color: $color-tertiary;
     /*@include box__shadow-checked;*/
     .fa-check-circle{
-        padding: 40px;
+        align-self: center;
+        /*padding: 40px;*/
         font-size: 40px;
         color: white;
         transform-origin: center;

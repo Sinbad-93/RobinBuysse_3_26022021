@@ -199,7 +199,7 @@ footer{
         font-size: 25px;
         margin-right: 100px;
         &:hover .heart_appear {
-            animation: put_up2 2s;}
+            animation: put_up2 2s forwards;}
         .full-heart{
             right: 5px;
             bottom: 52px;
@@ -259,6 +259,7 @@ footer{
 /*ANIMATION CHECKED */
 .checked {
     position: absolute;
+    display: flex;
     width: 0;
     right: 0;
     top: 0;
@@ -266,7 +267,8 @@ footer{
     background-color: $color-tertiary;
     /*@include box__shadow-checked;*/
     .fa-check-circle{
-        padding: 40px;
+        align-self: center;
+        padding: 0 50px 0 50px;
         font-size: 40px;
         color: white;
         transform-origin: center;

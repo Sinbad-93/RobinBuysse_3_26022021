@@ -10,7 +10,7 @@
         margin-right: 150px;
     }
     > p {
-        display: inline;
+       /*display: inline;*/
         font-size: 25px;
     }
     > div {
@@ -23,16 +23,22 @@
         height: 10%;
     }
     button{
-        margin-left: 80px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
     span {
         line-height: 28px;
         margin-left: 20px;
     }
 }
-
+.fa-heart{
+    &:hover .heart_appear {
+        animation : put_up 1.2s forwards;}
+        &:hover .full-heart{
+            animation : fill_heart 1.2s forwards ;
+        }
+    }
 .rules_container{
     height: 300px ;
     margin-top: -50px;
@@ -40,7 +46,8 @@
     justify-content: center;
     h2 {
         font-size: 30px;
-        margin-left: 40px;
+        margin: auto;
+        text-align: center;
         margin-top: 120px;
     }
     .rules {
@@ -77,7 +84,8 @@
 
     }
     .number {
-        top: 10%;
+        
+        align-self: center;
     }
 }
 .restaurants_container {
@@ -146,7 +154,7 @@
         font-size: 27px;
         margin-right: 100px;
         &:hover .heart_appear {
-            animation: put_up2 2s;}
+            animation: put_up2 2s forwards;}
         .full-heart{
             right: 5px;
             bottom: 52px;
@@ -178,16 +186,16 @@
         padding: 20px 3% 20px 2%;
         @include box__shadow;
         &:hover .checked{
-            animation: checked 2s;
+            animation: checked 2s forwards;
         }
         &:hover .text__price{
-            animation: reduce 2s;
+            animation: reduce 2s forwards;
         }
         &:hover .price{
-            animation: move_price_3 2s;
+            animation: move_price_3 2s forwards;
         }
         &:hover .fa-check-circle{
-            animation: turn-around 2s;
+            animation: turn-around 2s forwards;
         }
     }
     .text__price{
@@ -205,6 +213,7 @@
  /*ANIMATION CHECKED */
  .checked {
     position: absolute;
+    display: flex;
     width: 0;
     right: 0;
     top: 0;
@@ -212,7 +221,8 @@
     background-color: $color-tertiary;
     /*@include box__shadow-checked;*/
     .fa-check-circle{
-        padding: 40px;
+        align-self: center;
+        padding:0 80px 0 80px ;
         font-size: 40px;
         color: white;
         transform-origin: center;

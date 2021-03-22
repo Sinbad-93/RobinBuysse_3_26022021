@@ -10,7 +10,7 @@
     &:hover .heart_appear {
         animation : put_up 1.2s;}
         &:hover .full-heart{
-            animation : fill_heart 1.2s;
+            animation : fill_heart 1.2s ;
         }
     }
 .full-heart {
@@ -37,7 +37,7 @@
         animation : put_up2 1.2s;
     }
     &:hover .full-heart{
-        animation : fill_heart 1.4s;
+        animation : fill_heart 1.4s forwards;
     }
 }
 
